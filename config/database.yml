@@ -84,6 +84,8 @@ production:
     database: <%= ENV["PGDATABASE"] %>
     username: <%= ENV["PGUSER"] %>
     password: <%= ENV["PGPASSWORD"] %>
+    host: <%= ENV["PGHOST"] %>
+    port: <%= ENV["PGPORT"] %>
   cache:
     <<: *primary_production
     database: test_app_production_cache
